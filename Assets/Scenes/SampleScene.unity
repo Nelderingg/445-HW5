@@ -350,7 +350,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 761471714}
-  - component: {fileID: 761471717}
   - component: {fileID: 761471715}
   - component: {fileID: 761471719}
   - component: {fileID: 761471718}
@@ -425,14 +424,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!222 &761471717
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761471713}
-  m_CullTransparentMesh: 0
 --- !u!114 &761471718
 MonoBehaviour:
   m_ObjectHideFlags: 0
