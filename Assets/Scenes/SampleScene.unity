@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 816910414}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -765,6 +765,8 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 7
   maxJumps: 2
+  driftSpeed: 1
+  decelleration: 1
 --- !u!1 &1746869404
 GameObject:
   m_ObjectHideFlags: 0
