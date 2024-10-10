@@ -8,6 +8,8 @@ public class CollectibleManager : MonoBehaviour
     public Text type1Text;  // Reference to the Text object for Type 1 collectibles
     public Text type2Text;  // Reference to the Text object for Type 2 collectibles
     public GameObject door;
+    public int typeOneTotal = 0;
+    public int typeTwoTotal = 0;
 
     private int type1Count = 0;
     private int type2Count = 0;
@@ -22,14 +24,18 @@ public class CollectibleManager : MonoBehaviour
     public void IncrementType1Count()
     {
         type1Count++;
+        typeOneTotal = type1Count;
         UpdateUI();  // Update the UI whenever count changes
+        CheckForDoorActivation();
     }
 
     // Method to increment Type 2 collectible count
     public void IncrementType2Count()
     {
         type2Count++;
+        typeTwoTotal = type2Count;
         UpdateUI();  // Update the UI whenever count changes
+        CheckForDoorActivation();
     }
 
     // Method to update the UI with current counts
@@ -41,7 +47,8 @@ public class CollectibleManager : MonoBehaviour
 
     private void CheckForDoorActivation()
     {
-        if(type1Count >= 2 && type2Count >= 2)
+        Debug.Log("door activation called");
+        if(typeOneTotal == 2 && typeTwoTotal == 2)
         {
             door.SetActive(true);
         }
